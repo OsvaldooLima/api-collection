@@ -7,6 +7,9 @@ class Repositorio<T> {
       map [id]=value
    }
 
+   fun remove(id:String) = map.remove(id)
+
    fun findByid(id:String) = map.get(id)
 
+   fun findAll () = map.values
 }
